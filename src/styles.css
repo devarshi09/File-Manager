@@ -1,0 +1,32 @@
+.showThemAll {
+  display: flex;
+  align-items: flex-start;
+}
+
+.showDir {
+  flex: 1;
+  background-color: yellowgreen;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 10px;
+  max-width: 40%;
+  font-style: italic;
+  font-size: 130%;
+  word-wrap: break-word;
+  font-size: 21px;
+}
+
+.Route {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.extra {
+  color: white;
+}
