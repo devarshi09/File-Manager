@@ -29,6 +29,7 @@ class ShowDir extends React.Component {
                   return (
                     <div
                       key={ii}
+                      style={{ cursor: "default" }}
                       onClick={() => this.props.newRoute(i, ii, e.name)}
                     >
                       {e.name}
@@ -42,7 +43,8 @@ class ShowDir extends React.Component {
                         backgroundColor: "black",
                         color: "white",
                         borderRadius: "3px",
-                        paddingLeft: "6px"
+                        paddingLeft: "6px",
+                        cursor: "default"
                       }}
                       onClick={() => this.props.newRoute(i, ii, e.name)}
                     >
