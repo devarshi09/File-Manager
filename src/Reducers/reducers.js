@@ -1,5 +1,3 @@
-import axios from "axios";
-
 export let INITIAL = [];
 
 export const enterTheFolder = (state = INITIAL, action) => {
