@@ -45,7 +45,7 @@
   font-size: 21px;
   animation: moveLastSelect 500ms;
 }
-` @keyframes moveLastSelect {
+@keyframes moveLastSelect {
   from {
     max-width: 0%;
   }
