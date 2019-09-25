@@ -43,10 +43,9 @@
   font-size: 130%;
   word-wrap: break-word;
   font-size: 21px;
-  animation: moveLastSelect 1s;
+  animation: moveLastSelect 500ms;
 }
-
-@keyframes moveLastSelect {
+` @keyframes moveLastSelect {
   from {
     max-width: 0%;
   }
