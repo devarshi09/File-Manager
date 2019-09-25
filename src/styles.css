@@ -30,3 +30,27 @@
 .extra {
   color: white;
 }
+
+.showDirLast {
+  flex: 1;
+  background-color: yellowgreen;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 10px;
+  max-height: 0%;
+  max-width: 40%;
+  font-style: italic;
+  font-size: 130%;
+  word-wrap: break-word;
+  font-size: 21px;
+  animation: moveLastSelect 1s;
+}
+
+@keyframes moveLastSelect {
+  from {
+    max-width: 0%;
+  }
+  to {
+    max-width: 40%;
+  }
+}

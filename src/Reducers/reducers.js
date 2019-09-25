@@ -36,7 +36,6 @@ export const currentFolder = (state = "/", action) => {
     }
     newState += action.payload;
     newState += "/";
-
     return newState;
   } else {
     return state;

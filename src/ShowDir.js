@@ -22,6 +22,42 @@ class ShowDir extends React.Component {
     return (
       <div className="showThemAll">
         {this.props.enterTheFolder.map((e, i) => {
+          if (i === this.props.enterTheFolder.length - 1) {
+            console.log(i);
+            return (
+              <div className="showDirLast" key={i}>
+                {e.map((e, ii) => {
+                  if (e.select === false) {
+                    return (
+                      <div
+                        key={ii}
+                        style={{ cursor: "default" }}
+                        onClick={() => this.props.newRoute(i, ii, e.name)}
+                      >
+                        {e.name}
+                      </div>
+                    );
+                  } else {
+                    return (
+                      <div
+                        key={ii}
+                        style={{
+                          backgroundColor: "black",
+                          color: "white",
+                          borderRadius: "3px",
+                          paddingLeft: "6px",
+                          cursor: "default"
+                        }}
+                        onClick={() => this.props.newRoute(i, ii, e.name)}
+                      >
+                        {e.name}
+                      </div>
+                    );
+                  }
+                })}
+              </div>
+            );
+          }
           return (
             <div className="showDir" key={i}>
               {e.map((e, ii) => {
